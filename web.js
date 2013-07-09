@@ -1,6 +1,6 @@
 var express = require('express');
 var fs = require ('fs');
-// var buffer = require ('buffer');
+//var buffer = require('buffer');
 var app = express.createServer(express.logger());
 var inputfile = "./index.html";
 
@@ -12,7 +12,7 @@ app.get('/', function(request, response) {
       data = data.toString();
       response.send(data);
   });
-  // response.send("Hello World 4");
+ 
 });
 
 var port = process.env.PORT || 5000;
